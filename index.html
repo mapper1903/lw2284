@@ -264,7 +264,7 @@ function age(t) {
 
 // ---------------------------------------------------------------- harita
 const cv = $("cv"), ctx = cv.getContext("2d"), img = new Image();
-img.src = "harita.jpg"; img.onload = () => draw();
+img.src = "harita.jpg?v=3"; img.onload = () => draw();
 let W = 0, H = 0, dpr = 1, view = {cx:500, cy:500, ppu:1};  // ppu: piksel / birim (yatay)
 const ASP = 1478/1880;   // harita resminin oranı (birim başına dikey/yatay)
 function resize() {
